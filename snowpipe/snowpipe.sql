@@ -89,7 +89,7 @@ type STRING
  
 CREATE OR REPLACE STREAM azure_storage_containers_stream
 ON TABLE raw_azure_storage_containers_data
-SHOW_INITIAL_ROWS = FALSE;
+SHOW_INITIAL_ROWS = TRUE;
 
 
 -- create the task so taht it automatically puts the data from streaming into target path
