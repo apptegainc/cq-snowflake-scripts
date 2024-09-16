@@ -20,7 +20,7 @@ SHOW PIPES
 
 -- Create pipe 
 CREATE OR REPLACE PIPE s3_to_snf_from_azure_pipe
-AUTO_INGEST = TRUE
+AUTO_INGEST = FALSE
 AS
 COPY INTO cloudquery.public.raw_azure_storage_containers_data
 FROM @s3_stage_from_azure
